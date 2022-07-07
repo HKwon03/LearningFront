@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ul {color: red;}    /* 후손 선택자 */
+        div h2 {color: yellow; background-color: purple;}
+        div>ul>li {color: yellow; background-color: green;}
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Descendant Select_1 </h2>
+        <ul> 후손 선택자
+            <li> 자식의 자식 (후손1) </li>
+            <li> 자식의 자식 (후손2) </li>
+        </ul>
+    </div>
+    <div> Descendant Select_2 </div>
+    <ul> 별개의 ul
+        <li> 별개의 ul 목록 1</li>
+        <li> 별개의 ul 목록 2</li>
+    </ul>
+</body>
+</html>

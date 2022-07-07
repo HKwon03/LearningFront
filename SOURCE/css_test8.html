@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상 클래스 */
+        a:link {color: blue; text-decoration: underline;}
+        a:visited {color: red; }
+        a:hover {text-decoration: overline;}
+        a:active {background-color: yellow;}
+        div.d1 {border: 1px dashed green; width: 400px; padding: 5px;}
+        /* 가상 클래스*/
+        div.d1:hover {background-color: yellow;}
+        div.d1:active {background-color: red;}
+        div.d2 {border: 1px dashed red; width: 400; padding: 5px;}
+        div.d2:hover {background-color: green;}
+        div.d2:active {background-color: blue;}
+
+    </style>
+</head>
+<body>
+    <h2>Pseude Class</h2>
+    <p> <a href="http://www.w3c.org" target="_blank"> W3C 방문</a>
+    마우스 이벤트에 따른 변화
+    </p>
+    <div class="d1">
+        <h3> 가상클래스 1영역 </h3>
+        마우스, 위치에 따른 박스의 스타일 변화
+    </div>
+    <div class="d2">
+        <h3> 가상 클래스 2영역</h3>
+        마우스, 위치에 따른 박스의 스타일 변화
+    </div>
+
+</body>
+</html>
