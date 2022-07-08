@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<style>
+* {margin: 0; 
+  padding: 0;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+header {
+    color: white;
+    height:80px;
+    background-color: blue;
+    font-size: 25pt;
+    text-align: center;
+    padding-top: 25px;
+}
+nav { 
+    background-color: rgb(182, 139, 225);
+    height: auto;
+    text-align: center;
+  }
+nav a {
+    text-decoration: none;
+    color: white;
+    line-height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+}
+main {
+  height: 68.6vh;
+  background-color: rgb(192, 192, 192);
+  text-align: center;
+}
+h2 {
+  padding: 4%;
+}
+section {
+  text-align: center;
+  height: 50%;
+}
+table {
+  width: 800px;
+  border: solid 1px gray;
+  margin: auto;
+  font-weight: 600;
+  border-radius: 5px;
+}
+td {
+  margin: 5%;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+input {
+  float: left;
+  border-radius: 5px;
+}
+button {
+  margin-left: 1%;
+  background-color: rgb(202, 202, 202);
+  border: solid rgb(145, 145, 145) 1px;
+}
+footer {
+    height: 5.9vh;
+    background: linear-gradient(to right, blue, rgb(146, 153, 233));
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+}
+
+@media (max-width: 768px) {
+  nav a{
+    display: block;
+  }
+
+  table{
+    width: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+  쇼핑몰 회원관리 VER 1.0
+</header>
+
+<nav>
+    <a href="#">회원등록</a>
+    <a href="#">회원목록조회/수정</a>
+    <a href="#">회원매출조회</a>
+    <a href="#">홈으로</a>
+</nav>
+
+<main>
+  <h2>쇼핑몰 회원 등록</h2>
+  <section>
+    <table>
+      <tr>
+        <td>회원번호(자동발생)</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>회원성명</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>회원주소</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>가입일자</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>고객등급[A:VIP,B:일반,C:직원]</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>도시코드</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button>등록</button><button>조회</button></td>
+      </tr>
+    </table>
+  </section>
+</main>
+
+<footer>
+  HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea
+</footer>
+
+</body>
+</html>
